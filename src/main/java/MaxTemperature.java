@@ -21,6 +21,7 @@ public class MaxTemperature {
         FileOutputFormat.setOutputPath(job, new Path(args[1]));
 
         job.setMapperClass(MaxTemperatureMapper.class);
+        job.setCombinerClass(MaxTemperatureReducer.class); // 컴바이너 추가
         job.setReducerClass(MaxTemperatureReducer.class);
 
         job.setOutputKeyClass(Text.class);
