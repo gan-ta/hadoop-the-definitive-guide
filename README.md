@@ -12,3 +12,7 @@
  hadoop MaxTemperature ../input/ncdc/sample.txt output 
 ```
 3. target 폴더 output 디렉토리에서 결과물 확인
+
+## Reference
+1. 하둡 완벽 가이드 (톰 화이트)
+2. ncdc input 데이터: https://github.com/tomwhite/hadoop-book
