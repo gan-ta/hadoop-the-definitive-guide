@@ -40,6 +40,17 @@ hadoop FileCopyWithProgress ../input/docs/1400-8.txt hdfs://localhost/usr/$USER/
 hadoop ListStatus hdfs://localhost/ hdfs://localhost/usr/$USER
 ```
 
+## 5장
+<독립 모드 수행> <br />
+1. Text 문자열을 압축하고 gunzip을 사용하여 표준 입력으로부터 압축 해제
+```
+echo "Text" | hadoop StreamCompressor org.apache.hadoop.io.compress.GzipCodec | gunzip -
+```
+2. codec을 path 명으로 찾고 압축 해제
+```
+hadoop FileDecompressor /Users/kimheesup/Desktop/hadoop-the-definitive-guide/input/codec/file.gz
+```
+
 ## Reference
 1. 하둡 완벽 가이드 (톰 화이트)
 2. input 데이터: https://github.com/tomwhite/hadoop-book
