@@ -51,6 +51,12 @@ echo "Text" | hadoop StreamCompressor org.apache.hadoop.io.compress.GzipCodec | 
 hadoop FileDecompressor /Users/kimheesup/Desktop/hadoop-the-definitive-guide/input/codec/file.gz
 ```
 
+## 6장
+1. conf 파일을 적용한 hadoop fs 명령어
+```
+hadoop fs -conf conf/hadoop-localhost.xml -ls .
+```
+
 ## Reference
 1. 하둡 완벽 가이드 (톰 화이트)
 2. input 데이터: https://github.com/tomwhite/hadoop-book
