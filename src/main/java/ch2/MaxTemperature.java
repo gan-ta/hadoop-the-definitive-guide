@@ -1,3 +1,5 @@
+package ch2;
+
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
@@ -9,7 +11,7 @@ public class MaxTemperature {
 
     public static void main(String[] args) throws Exception {
         if (args.length != 2) {
-            System.err.println("Usage: MaxTemperature <input path> <output path>");
+            System.err.println("Usage: ch2.MaxTemperature <input path> <output path>");
             System.exit(-1);
         }
 

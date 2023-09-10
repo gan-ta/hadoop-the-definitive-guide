@@ -1,3 +1,8 @@
+package ch5;
+
+import ch2.MaxTemperature;
+import ch2.MaxTemperatureMapper;
+import ch2.MaxTemperatureReducer;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;

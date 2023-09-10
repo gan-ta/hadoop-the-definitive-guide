@@ -1,3 +1,5 @@
+package ch3;
+
 import org.apache.hadoop.fs.FsUrlStreamHandlerFactory;
 import org.apache.hadoop.io.IOUtils;
 
