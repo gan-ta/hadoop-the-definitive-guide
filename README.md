@@ -64,6 +64,11 @@ hadoop ch6.ConfigurationPrinter -conf ../input/conf/hadoop-localhost.xml | grep 
 ```
 hadoop ch6.ConfigurationPrinter -D color=yellow | grep color 
 ```
+4. 유닛테스트 후 로컬에서 잡 테스트 (독립모드)
+```
+hadoop ch6.MaxTemperatureDriver -conf ../input/conf/hadoop-local.xml ../input/ncdc/micro/sample.txt ../output
+hadoop ch6.MaxTemperatureDriver -fs file:/// -jt local ../input/ncdc/micro/sample.txt ../output
+```
 
 ## Reference
 1. 하둡 완벽 가이드 (톰 화이트)

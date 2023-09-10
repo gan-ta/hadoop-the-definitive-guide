@@ -10,7 +10,7 @@ import org.apache.hadoop.mrunit.mapreduce.ReduceDriver;
 import org.junit.Ignore;
 import org.junit.Test;
 
-public class MacTemperatureMapperTest {
+public class MaxTemperatureMapperTest {
     @Test
     public void parsesValidRecord() throws IOException {
         Text value = new Text("0043011990999991950051518004+68750+023550FM-12+0382" +
