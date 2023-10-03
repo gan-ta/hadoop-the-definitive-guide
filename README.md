@@ -1,5 +1,5 @@
 # hadoop-the-definitive-guide
-
+하둡 완벽 가이드 예제 정리 저장소입니다.
 ## 설정
 - hadoop 2.10.2 버전으로 실습 진행
 - hadoop download: https://hadoop.apache.org/release/2.10.2.html
