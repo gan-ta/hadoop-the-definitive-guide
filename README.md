@@ -70,6 +70,13 @@ hadoop ch6.MaxTemperatureDriver -conf ../input/conf/hadoop-local.xml ../input/nc
 hadoop ch6.MaxTemperatureDriver -fs file:/// -jt local ../input/ncdc/micro/sample.txt ../output
 ```
 
+## 8장
+1. 심플한 맵 리듀스 잡 실행
+```
+hadoop ch8.MinimalMapReduce "../input/ncdc/all/190{1,2}.gz" ../output
+```
+
+
 ## Reference
 1. 하둡 완벽 가이드 (톰 화이트)
 2. input 데이터: https://github.com/tomwhite/hadoop-book
