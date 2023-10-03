@@ -76,6 +76,15 @@ hadoop ch6.MaxTemperatureDriver -fs file:/// -jt local ../input/ncdc/micro/sampl
 hadoop ch8.MinimalMapReduce "../input/ncdc/all/190{1,2}.gz" ../output
 ```
 
+## 9장
+1. 카운터 적용
+```
+hadoop jar hadoop-the-definitive-guide-1.0-SNAPSHOT.jar ch9.MaxTemperatureWithCounters ../input/ncdc/all ../output-counters
+```
+2. 카운터 반환
+```
+hadoop jar hadoop-the-definitive-guide-1.0-SNAPSHOT.jar ch9.MissingTemperatureFields ${JOB_ID}
+```
 
 ## Reference
 1. 하둡 완벽 가이드 (톰 화이트)
